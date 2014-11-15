@@ -1,3 +1,7 @@
+body {
+	font-family: 'Bitter', serif;
+} 
+
 ul {
 	list-style-type: none;
 	display: inline-block;
@@ -11,6 +15,35 @@ ul li.adjacent {
 #graphcanvas {
 	margin: 5px;
     max-width: 400px;
-    height: 200px;
+    height: 300px;
     margin: auto;
+ }
+
+.header h1, .header p {
+	display: block;
+}
+
+.header p {
+	width: 300px;
+}
+
+.projectbox {
+	width: 200px;
+	height: 220px;
+	background-color: #A00000;
+  	line-height: 200px;
+	text-align: center;
+}
+
+.projectbox a, .projectbox a:hover, .projectbox a:active, .projectbox a:focus {
+	font-size: 42px;
+  	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;    
+	color: #FFF;  
+  	text-decoration: none;
+}
+
+ .projectbox a:hover {
+ 	text-decoration: line-through;
  }
