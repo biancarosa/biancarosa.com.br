@@ -1,0 +1,16 @@
+ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+ul li.adjacent {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#graphcanvas {
+	margin: 5px;
+    max-width: 400px;
+    height: 200px;
+    margin: auto;
+ }

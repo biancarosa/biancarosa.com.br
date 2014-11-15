@@ -1,0 +1,30 @@
+<form class="form-inline">
+	<input type="text" class="form-control" ng-model="u" />
+	<input type="text" class="form-control" ng-model="v" />
+	<button type="button" class="btn btn-default" ng-click="addEdge()">Adicionar aresta</button>
+	<small>* caso o vértice não exista, irá adicioná-lo</small>
+</form>
+
+
+<div id="graphcanvas">
+</div>
+
+<div>	
+	<h3>Lista de adjacência</h3>
+	<span ng-hide="hasNodes()">Adicione uma aresta :)</span>
+	<ul ng-repeat="(node, adjacents) in graph">
+		<h4>{{ node }}</h4>
+		<li class="adjacent" ng-repeat="edge in adjacents">
+			{{ edge }}
+		</li>
+	</ul>
+</div>
+
+<div>
+	<a ng-click="findConnectedComponents()">Componentes conexas</a>
+	<ul ng-repeat="component in components">
+		<li ng-repeat="node in component">
+			{{node}}
+		</li>
+	</ul>
+</div>
