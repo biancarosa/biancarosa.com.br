@@ -28,11 +28,14 @@ ul li.adjacent {
 }
 
 .projectbox {
-	width: 200px;
-	height: 220px;
+	width: 240px;
+	height: 240px;
 	background-color: #A00000;
   	line-height: 200px;
 	text-align: center;
+	margin: 10px;
+	padding: 1px;
+	display: inline-block;
 }
 
 .projectbox a, .projectbox a:hover, .projectbox a:active, .projectbox a:focus {
@@ -46,4 +49,8 @@ ul li.adjacent {
 
  .projectbox a:hover {
  	text-decoration: line-through;
+ }
+
+ .graphbox {
+ 	margin-bottom: 10px;
  }
