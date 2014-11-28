@@ -7,9 +7,31 @@ controllers.controller('HomeController', function ($scope) {
 });
 
 
+controllers.controller('SierpinskiController', function ($scope) {
+
+ 
+	$scope.draw = function() {
+		var c = document.getElementById("sierpinskiCanvas");
+		var ctx = c.getContext("2d");
+		// ctx.moveTo(0,0);
+		// ctx.lineTo(500,100);
+		// ctx.lineTo(0,300);
+		// ctx.stroke();
+		// int dist0 = 100;
+		// int level = 3;
+  //       int dist = dist0;
+  //       for (int i = level; i > 0; i--)
+  //           dist /= 2;
+  //       ctx.moveTo(2 * dist, dist);
+  //       sierpA(level, ctx); 
+	}
+});
+
+
 controllers.controller('GraphController', function ($scope, graphService) {
 	$scope.graph = {}
-	
+	$scope.boxshow = 'list'
+
 	$scope.addEdge = function() {
 		$scope.graph = graphService.addEdge($scope.graph, $scope.u, $scope.v)
 		//add only if it doesnt exists
@@ -49,13 +71,19 @@ controllers.controller('GraphController', function ($scope, graphService) {
 	    $scope.graphcanvas.refresh();
 	}
 
+	$scope.show = function(boxshow) {
+		$scope.boxshow = boxshow
+	}
+
 	$scope.findConnectedComponents = function() {
-		//$scope.components = graphService.findConnectedComponents($scope.graph)
+		$scope.show('conexcomp')
+		$scope.components = graphService.findConnectedComponents($scope.graph)
 	}
     
 	$scope.graphcanvas = new sigma('graphcanvas')
 	
-	$scope.hasNodes = function() {
-		return Object.keys($scope.graph).length
+
+	$scope.mustHide = function(boxshow) {
+		return $scope.boxshow != boxshow
 	}
 });

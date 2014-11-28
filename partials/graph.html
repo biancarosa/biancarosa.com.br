@@ -6,12 +6,17 @@
 </form>
 
 
+
 <div id="graphcanvas">
 </div>
 
-<div>	
+<form class="form-inline">
+	<button type="button" class="btn btn-primary" ng-click="show('list')">Lista de adjacência</button>
+	<button type="button" class="btn btn-primary" ng-click="findConnectedComponents()">Componentes conexas</button>
+</form>
+
+<div class="graphbox" ng-hide="mustHide('list')">	
 	<h3>Lista de adjacência</h3>
-	<span ng-hide="hasNodes()">Adicione uma aresta :)</span>
 	<ul ng-repeat="(node, adjacents) in graph">
 		<h4>{{ node }}</h4>
 		<li class="adjacent" ng-repeat="edge in adjacents">
@@ -20,4 +25,12 @@
 	</ul>
 </div>
 
-
+<div class="graphbox" ng-hide="mustHide('conexcomp')">
+	<h3>Componentes conexos</h3>
+	<ul ng-repeat="component in components">
+		<h4>Componente {{ $index+1 }}</h4>
+		<li  class="adjacent" ng-repeat="edge in component">
+			{{ edge }}
+		</li>
+	</ul>
+</div>

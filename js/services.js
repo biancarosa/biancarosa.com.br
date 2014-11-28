@@ -2,14 +2,6 @@
 
 /* Services */
 
-/*var eventAlertServices = angular.module('eventAlertServices', ['ngResource']);
-
-eventAlertServices.factory('Person', ['$resource',	
-  function($resource){
-    return $resource('http://dev.emturne.com.br:8080/EventAlert/person/:personId',
-    	 {personId:'@id'});
-  }]);*/
-
 var services =  angular.module('services', []);
 
 services.service('graphService', function () {
@@ -23,8 +15,54 @@ services.service('graphService', function () {
 
 		if ($.inArray(u, graph[v]) == -1) graph[v][graph[v].length] = u
 
-
-		//console.log(graph)
 		return graph
 	}
+
+	var findVertices = function(graph) {
+		var vertices = []
+		for (var v in graph) {
+			vertices[vertices.length] = v
+		}	
+		return vertices
+	}
+
+	var find = function(p, uptree) {
+		if (uptree[p] != p) {
+			uptree[p] = find(uptree[p],uptree);
+		}
+		return uptree[p];
+	}
+	var union = function(p, q, uptree) {
+		find(p,uptree); find(q,uptree);
+		if (uptree[p] > uptree[q]) {
+			uptree[uptree[p]] = uptree[q];
+		} else {
+			uptree[uptree[q]] = uptree[p];
+		}
+	}
+	this.findConnectedComponents = function(graph) {
+		var vertices = findVertices(graph);
+
+		var uptree = []
+		
+		for(var i = 0; i < vertices.length; ++i) {
+			uptree[vertices[i]] = vertices[i];
+		}
+		for(var i = 0; i < vertices.length; ++i) {
+			for (var v in graph[vertices[i]]) {
+				union(vertices[i], graph[vertices[i]][v], uptree);
+			}
+		}
+
+		var component = {}
+		
+		Object.keys(uptree).forEach(function (key) {
+			if (typeof component[uptree[key]] === 'undefined') component[uptree[key]] = []
+
+		 	component[uptree[key]][component[uptree[key]].length] = key;
+		});
+
+		return component
+	}
 })
+
