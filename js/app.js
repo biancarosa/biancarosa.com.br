@@ -9,7 +9,7 @@ var app = angular.module('app', [
 
 app.config(function($routeProvider) {
       $routeProvider.when('/', { templateUrl: 'partials/main.html', controller: 'HomeController' });
-      $routeProvider.when('/grafos', { templateUrl: 'partials/graph.html', controller: 'GraphController' });
+      $routeProvider.when('/graph', { templateUrl: 'partials/graph.html', controller: 'GraphController' });
       $routeProvider.when('/sierpinski', { templateUrl: 'partials/sierpinski.html', controller: 'SierpinskiController' });
       $routeProvider.otherwise({ redirectTo: '/' });
  });

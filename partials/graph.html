@@ -1,8 +1,8 @@
 <form class="form-inline">
 	<input type="text" class="form-control" ng-model="u" />
 	<input type="text" class="form-control" ng-model="v" />
-	<button type="button" class="btn btn-default" ng-click="addEdge()">Adicionar aresta</button>
-	<small>* caso o vértice não exista, irá adicioná-lo</small>
+	<button type="button" class="btn btn-default" ng-click="addEdge()">Add edge</button>
+	<small>* in case the edge doesn't exist, it will add it</small>
 </form>
 
 
@@ -11,12 +11,12 @@
 </div>
 
 <form class="form-inline">
-	<button type="button" class="btn btn-primary" ng-click="show('list')">Lista de adjacência</button>
-	<button type="button" class="btn btn-primary" ng-click="findConnectedComponents()">Componentes conexas</button>
+	<button type="button" class="btn btn-primary" ng-click="show('list')">Adjacency list</button>
+	<button type="button" class="btn btn-primary" ng-click="findConnectedComponents()">Connected Components</button>
 </form>
 
-<div class="graphbox" ng-hide="mustHide('list')">	
-	<h3>Lista de adjacência</h3>
+<div class="graphbox" ng-hide="mustHide('list')">
+	<h3>Adjacency List</h3>
 	<ul ng-repeat="(node, adjacents) in graph">
 		<h4>{{ node }}</h4>
 		<li class="adjacent" ng-repeat="edge in adjacents">
@@ -26,7 +26,7 @@
 </div>
 
 <div class="graphbox" ng-hide="mustHide('conexcomp')">
-	<h3>Componentes conexos</h3>
+	<h3>Connected components</h3>
 	<ul ng-repeat="component in components">
 		<h4>Componente {{ $index+1 }}</h4>
 		<li  class="adjacent" ng-repeat="edge in component">
