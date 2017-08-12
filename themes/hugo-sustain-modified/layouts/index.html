@@ -1,0 +1,19 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      {{ partial "header" . }}
+      <section id="about">
+        <div class="container">
+        <div class="avatar">
+          <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
+        </div>
+        <h3>I'm <strong>{{ .Site.Params.author }}</strong> and I'm a Lead Developer.</h3>
+        <h3>Lately I'm coding in Python, Go and AngularJS.</h3>
+        <h3>Contact me at <a href="http://twitter.com/{{ .Site.Params.Social.Twitter }}">@{{ .Site.Params.Social.Twitter }}</a> or by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>.</h3>
+        {{ partial "social.html" . }}
+        </div>
+      </section>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
