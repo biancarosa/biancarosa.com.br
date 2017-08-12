@@ -1,0 +1,34 @@
+baseurl = "https://example.com/"
+languageCode = "en-US"
+title = "Bianca Rosa"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain-modified"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "profile.jpeg"
+  author = "Bianca Rosa"
+  description = "Just another web developer website"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "biancarosa"
+  Email         = "me@biancarosa.com.br"
+  Twitter       = "__biancarosa"
+  LinkedIn      = "brosa"
+  Stackoverflow = "bianca-rosa"
+  Medium        = "@__biancarosa"
+
+#[[menu.main]]
+#  name = "slides"
+#  identifier = "slides"
+#  weight = 200
+#  url = "/slides/"
