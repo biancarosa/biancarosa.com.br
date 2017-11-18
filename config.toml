@@ -27,8 +27,8 @@ theme = "hugo-sustain-modified"
   Stackoverflow = "users/2378189/bianca-rosa"
   Medium        = "@__biancarosa"
 
-#[[menu.main]]
-#  name = "slides"
-#  identifier = "slides"
-#  weight = 200
-#  url = "/slides/"
+[[menu.main]]
+  name = "talks"
+  identifier = "talks"
+  weight = 200
+  url = "/talks/"

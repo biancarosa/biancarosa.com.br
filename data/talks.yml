@@ -1,0 +1,6 @@
+name: Talks
+source:
+  - icon: fa fa-github
+    title: Redes Neurais com Python e Scikit
+    link: http://biancarosa.com.br/slides/pybr-2017.html
+    description: Python Brasil 20107
