@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Bianca Rosa</title>
+    <link>http://biancarosa.com.br/categories/development/</link>
+    <description>Recent content in Development on Bianca Rosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 30 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://biancarosa.com.br/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why you should choose your Python module names more carefully</title>
+      <link>http://biancarosa.com.br/blog/modules/</link>
+      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/blog/modules/</guid>
+      <description>We code everyday. We produce code fast, following the rhythm of the rock and roll guitar playing in the background and every time we focus on writing code fast, we miss some important things that makes us lose time in the future.
+The next time you create a new file in your Python project, think about its name very carefully. Every Python file is a module. We import modules all the time.</description>
+    </item>
+    
+  </channel>
+</rss>

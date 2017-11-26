@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Produtividade on Bianca Rosa</title>
+    <link>http://biancarosa.com.br/tags/produtividade/</link>
+    <description>Recent content in Produtividade on Bianca Rosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 12 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://biancarosa.com.br/tags/produtividade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Considerações de uma semana usando o VSCode</title>
+      <link>http://biancarosa.com.br/blog/vscode/</link>
+      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/blog/vscode/</guid>
+      <description>Eu tenho uma tendência a não gostar da Microsoft. Uma mistura de experiência, preconceito, filosofias que não batem.
+Eu trabalhei bastante tempo com Java/Grails, e nessa época o Eclipse quebrou um galho. Gostava bastante do IntelliJ, mas a versão que dava suporte à todo ecossistema do Grails era a versão paga, então não foi uma opção na época. Usava ele até pra HTML/CSS/JS.
+Quando comecei a trabalhar com Python e JavaScript, fiquei órfã de editor.</description>
+    </item>
+    
+  </channel>
+</rss>
