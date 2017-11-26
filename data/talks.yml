@@ -4,3 +4,8 @@ source:
     title: Redes Neurais com Python e Scikit
     link: http://biancarosa.com.br/slides/pybr-2017.html
     description: Python Brasil 2017
+
+  - icon: fa fa-github
+    title: Boas Práticas & Clean Code com Golang
+    link: http://biancarosa.com.br/slides/go-clean-code.html
+    description: GDG DevFest RJ - 26/11/2017
