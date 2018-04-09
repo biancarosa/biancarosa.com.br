@@ -1,11 +1,21 @@
 name: Talks
 source:
   - icon: fa fa-github
-    title: Redes Neurais com Python e Scikit
-    link: http://biancarosa.com.br/slides/pybr-2017.html
-    description: Python Brasil 2017
+    title: Python Web Frameworks - Quais são e como escolher!
+    link: http://biancarosa.com.br/slides/web-frameworks-pyse-2018.html
+    description: Python Sudeste - São Paulo / SP, 31/03/2018
 
   - icon: fa fa-github
     title: Boas Práticas & Clean Code com Golang
     link: http://biancarosa.com.br/slides/go-clean-code.html
-    description: GDG DevFest RJ - 26/11/2017
+    description: GDG DevFest - Rio de Janeiro / RJ - 26/11/2017
+
+  - icon: fa fa-github
+    title: Redes Neurais com Python e Scikit
+    link: http://biancarosa.com.br/slides/pybr-2017.html
+    description: Python Brasil, Belo Horizonte - MG, 06/10/2017
+
+  - icon: fa fa-github
+    title: Redes Neurais com Python e Scikit
+    link: http://biancarosa.com.br/slides/redes-neurais.html
+    description: Python Nordeste, São Luís - MA, 09/06/2017
