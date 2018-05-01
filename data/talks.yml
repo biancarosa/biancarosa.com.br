@@ -2,6 +2,11 @@ name: Talks
 source:
   - icon: fa fa-github
     title: Python Web Frameworks - Quais são e como escolher!
+    link: http://biancarosa.com.br/slides/tdc-go-web-apis.html
+    description: - TDC Florianópolis - Florianópolis / SC, 21/04/2018
+
+  - icon: fa fa-github
+    title: Python Web Frameworks - Quais são e como escolher!
     link: http://biancarosa.com.br/slides/web-frameworks-pyse-2018.html
     description: Python Sudeste - São Paulo / SP, 31/03/2018
 
