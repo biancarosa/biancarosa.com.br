@@ -1,9 +1,9 @@
 name: Talks
 source:
   - icon: fa fa-github
-    title: Python Web Frameworks - Quais são e como escolher!
+    title: Desenvolvendo Web APIs em Go
     link: http://biancarosa.com.br/slides/tdc-go-web-apis.html
-    description: - TDC Florianópolis - Florianópolis / SC, 21/04/2018
+    description: TDC Florianópolis - Florianópolis / SC, 21/04/2018
 
   - icon: fa fa-github
     title: Python Web Frameworks - Quais são e como escolher!
