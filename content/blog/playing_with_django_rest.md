@@ -3,7 +3,7 @@ title = "Playing with Django Rest Framework"
 description = ""
 tags = [
     "python",
-    "django"
+    "django",
     "web",
     "development",
     "en"
@@ -28,7 +28,7 @@ I have to confess that I was overwhelmed by the web browseable API.
 
 My code looks like that:
 
-<script src="https://gist.github.com/biancarosa/720db847d568caba3a4a238ff54391b2.js"></script>
+<script src="https://gist.github.com/biancarosa/6fe135f4165affa837e9e99237f09a41.js"></script>
 
 Pretty neat, huh?
 

@@ -32,3 +32,9 @@ theme = "hugo-sustain-modified"
   identifier = "talks"
   weight = 200
   url = "/talks/"
+
+[[menu.main]]
+  name = "blog"
+  identifier = "blog"
+  weight = 200
+  url = "/blog/"
