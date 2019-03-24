@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed Systems on Bianca Rosa</title>
+    <link>http://biancarosa.com.br/tags/distributed-systems/</link>
+    <description>Recent content in Distributed Systems on Bianca Rosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 13 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://biancarosa.com.br/tags/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing distributed applications with Python Smart Objects as a Java RMI alternative</title>
+      <link>http://biancarosa.com.br/blog/python_smart_obj/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/blog/python_smart_obj/</guid>
+      <description>Hello there! :)
+So, for those of you who want to write distributed systems easily in Python or are just curious about the subject, I was studying about Java RMI for my Distributed Systems class and I always get thrilledto know that I need to write Java code. Nothing against good ol’ Java, it’s just not my vibe these days but I’d happily do it if convinced. Since I was just studying and trying to learn a concept, I searched for a Python alternative.</description>
+    </item>
+    
+  </channel>
+</rss>

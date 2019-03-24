@@ -23,9 +23,27 @@
     <item>
       <title>Development</title>
       <link>http://biancarosa.com.br/tags/development/</link>
-      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://biancarosa.com.br/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Systems</title>
+      <link>http://biancarosa.com.br/tags/distributed-systems/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>http://biancarosa.com.br/tags/django/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/tags/django/</guid>
       <description></description>
     </item>
     
@@ -41,7 +59,7 @@
     <item>
       <title>En</title>
       <link>http://biancarosa.com.br/tags/en/</link>
-      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://biancarosa.com.br/tags/en/</guid>
       <description></description>
@@ -68,7 +86,7 @@
     <item>
       <title>Python</title>
       <link>http://biancarosa.com.br/tags/python/</link>
-      <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://biancarosa.com.br/tags/python/</guid>
       <description></description>
@@ -80,6 +98,15 @@
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
       <guid>http://biancarosa.com.br/tags/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://biancarosa.com.br/tags/web/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/tags/web/</guid>
       <description></description>
     </item>
     

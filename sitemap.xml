@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://biancarosa.com.br/blog/python_smart_obj/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://biancarosa.com.br/blog/playing_with_django_rest/</loc>
+    <lastmod>2018-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://biancarosa.com.br/blog/vscode/</loc>
     <lastmod>2017-10-12T00:00:00+00:00</lastmod>
   </url>
@@ -19,13 +29,13 @@
   
   <url>
     <loc>http://biancarosa.com.br/</loc>
-    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://biancarosa.com.br/blog/</loc>
-    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,13 +58,25 @@
   
   <url>
     <loc>http://biancarosa.com.br/tags/development/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://biancarosa.com.br/categories/development/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://biancarosa.com.br/tags/distributed-systems/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://biancarosa.com.br/tags/django/</loc>
+    <lastmod>2018-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,13 +88,13 @@
   
   <url>
     <loc>http://biancarosa.com.br/tags/en/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://biancarosa.com.br/categories/en/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -96,7 +118,7 @@
   
   <url>
     <loc>http://biancarosa.com.br/tags/python/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -115,6 +137,12 @@
   <url>
     <loc>http://biancarosa.com.br/categories/talks/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://biancarosa.com.br/tags/web/</loc>
+    <lastmod>2018-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

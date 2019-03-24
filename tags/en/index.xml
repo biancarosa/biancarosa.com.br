@@ -6,10 +6,30 @@
     <description>Recent content in En on Bianca Rosa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 30 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://biancarosa.com.br/tags/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing distributed applications with Python Smart Objects as a Java RMI alternative</title>
+      <link>http://biancarosa.com.br/blog/python_smart_obj/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/blog/python_smart_obj/</guid>
+      <description>Hello there! :)
+So, for those of you who want to write distributed systems easily in Python or are just curious about the subject, I was studying about Java RMI for my Distributed Systems class and I always get thrilledto know that I need to write Java code. Nothing against good ol’ Java, it’s just not my vibe these days but I’d happily do it if convinced. Since I was just studying and trying to learn a concept, I searched for a Python alternative.</description>
+    </item>
+    
+    <item>
+      <title>Playing with Django Rest Framework</title>
+      <link>http://biancarosa.com.br/blog/playing_with_django_rest/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://biancarosa.com.br/blog/playing_with_django_rest/</guid>
+      <description>This is the first of a series of posts that I will write to share some knowledge I gained on Python Web Frameworks plus a nice, public way to push me into learning more and more about them.
+I’ve decided to do the same project on all of them, starting with Django Rest Framework. This is will be a standalone analysis and then I will move forward to comparisons. My intention is to find a good framework to plug into a database and see how well it handles GET requests.</description>
+    </item>
     
     <item>
       <title>Why you should choose your Python module names more carefully</title>

@@ -7,7 +7,7 @@
     <meta name="author" content="map[]" />
     <meta name="description" content="Just another web developer website">
     <link rel="shortcut icon" type="image/x-icon" href="http://biancarosa.com.br/img/favicon.ico">
-    <title>Why you should choose your Python module names more carefully</title>
+    <title>Writing distributed applications with Python Smart Objects as a Java RMI alternative</title>
     <meta name="generator" content="Hugo 0.26-DEV" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://biancarosa.com.br/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
@@ -60,17 +60,19 @@ ga('send', 'pageview');
       <div class="container">
         <div class="blog-post">
           <h3>
-            <strong><a href="http://biancarosa.com.br/blog/modules/">Why you should choose your Python module names more carefully</a></strong>
+            <strong><a href="http://biancarosa.com.br/blog/python_smart_obj/">Writing distributed applications with Python Smart Objects as a Java RMI alternative</a></strong>
           </h3>
         </div>
         <div class="blog-title">
           <h4>
-          August 30, 2017
+          August 13, 2018
             &nbsp;&nbsp;
             
             <span class="label label-success">python</span>
             
             <span class="label label-success">development</span>
+            
+            <span class="label label-success">distributed-systems</span>
             
             <span class="label label-success">en</span>
             
@@ -79,49 +81,31 @@ ga('send', 'pageview');
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="blogpost">
-              <p>We code everyday. We produce code fast, following the rhythm of the rock and roll guitar playing in the background and every time we focus on writing code fast, we miss some important things that makes us lose time in the future.</p>
+              <p>Hello there! :)</p>
 
-<p>The next time you create a new file in your Python project, think about its name very carefully. Every Python file is a module. We import modules all the time. If I create a file named after an already existent module — and worst, already imported module, I am going to spend at least ten minutes trying to figure out what the heck is wrong with my code. Just because I chose a bad file name. Some of them are obvious and we should definitely avoid.</p>
+<p>So, for those of you who want to write distributed systems easily in Python or are just curious about the subject, I was studying about <a href="https://docs.oracle.com/javase/tutorial/rmi/">Java RMI</a> for my Distributed Systems class and I always get <sarcasm>thrilled</sarcasm>to know that I need to write Java code. Nothing against good ol’ Java, it’s just not my vibe these days but I’d happily do it if convinced. Since I was just studying and trying to learn a concept, I searched for a Python alternative.</p>
 
-<p>This is a file called numpy.py:</p>
+<p>And I found it.</p>
 
-<script src="https://gist.github.com/biancarosa/720db847d568caba3a4a238ff54391b2.js"></script>
+<p>Python Smart Objects are implemented in this library named <a href="http://pyro4.readthedocs.io/en/stable/">Pyro</a> and it amazes me how simple and easy it is to write a distributed application with it. It works on multiple Python versions, it is being actively updated by its author and its seamlessly to use.</p>
 
-<p>Or worst, if you have a file named numpy.py and the same method as the actual numpy module, you might think you’re calling a function but you’re actually calling another…</p>
+<p>I’ve made a small chat distributed system named <a href="https://github.com/biancarosa/mess">mess</a> that makes use of Pyro, but I’ll show a simpler version of the code here.</p>
 
-<script src="https://gist.github.com/biancarosa/8093788ce5dfc8f3c992c43c44b80028.js"></script>
+<p>This is the code for the client. It creates a proxy to the server and sends a text message.</p>
 
-<script src="https://gist.github.com/biancarosa/0656d554dc9a969c47511c09e392e7ef.js"></script>
+<script src="https://gist.github.com/biancarosa/ff552e5d7244112e9e71267b5211be6d.js"></script>
 
-<p>This is also a problem when you import everything from a module. You don’t know what you are importing. Maybe the module you are importing has the same function as one you already defined. You have to dig into the module’s code to find out.</p>
+<p>And this is the code for the server. It locates a name server (Pyro comes with one and you just need to use it with <code>python -m Pyro4.naming</code>sin the same machine as the server).</p>
 
-<p>Cool tips:</p>
+<script src="https://gist.github.com/biancarosa/26f52dbbeadfa63d725d561eafa52a0e.js"></script>
 
-<ul>
-<li>Avoid using import *.</li>
-<li>Avoid using common names for modules.</li>
-<li>Think about what you’re doing instead of typing code as fast as your fingers allow you.</li>
-<li>Naming things is important. Name them better.</li>
-</ul>
+<p>And that’s all :) You can run multiple clients, but only one server per name, so if you need multiple servers for some reason you’re gonna need to register names with a identifier.</p>
 
-<p>PS: Stuff like this happens in real life, it happened once to colleagues of mine at work and it happened with me today. With that same example I shared in this post. Because I was sleepy and numpy.py seemed like a good filename to play with numpy. The only reason why I was able to find out what was happening fast was because I had seen it happening before.</p>
+<p>Disclaimer: I never needed to use <a href="http://pyro4.readthedocs.io/">Python Smart Objects</a> neither <a href="https://docs.oracle.com/javase/tutorial/rmi/">Java RMI</a> in a real world application. I came across RMI in a college class about Distributed Systems. It’s a nice thing to study as an alternative because it is the kind of knowledge that you might need in the future. Nowadays, if I really need distributed systems with high performance, I’d try <a href="https://grpc.io/">GRPC</a>, probably with <a href="https://golang.org/">Go</a>.</p>
 
               <hr>
               <div class="related-posts">
                 <h5>Related Posts</h5>
-                
-                  <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                      <h6 style="text-align: right">
-                        August 13, 2018
-                      </h6>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-8">
-                      <h6 style="text-align: left">
-                        <strong><a href="/blog/python_smart_obj/">Writing distributed applications with Python Smart Objects as a Java RMI alternative</a></strong>
-                      </h6>
-                    </div>
-                  </div>
                 
                   <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4">
@@ -132,6 +116,19 @@ ga('send', 'pageview');
                     <div class="col-sm-8 col-md-8 col-lg-8">
                       <h6 style="text-align: left">
                         <strong><a href="/blog/playing_with_django_rest/">Playing with Django Rest Framework</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 30, 2017
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/modules/">Why you should choose your Python module names more carefully</a></strong>
                       </h6>
                     </div>
                   </div>
