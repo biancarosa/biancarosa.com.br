@@ -1,6 +1,26 @@
 name: Talks
 source:
   - icon: fa fa-github
+    title: Programando de forma concorrente em Go
+    link: http://biancarosa.com.br/slides/concorrencia-go.html
+    description: GDG DevFest, Rio de Janeiro - RJ, 17/11/2017
+
+  - icon: fa fa-github
+    title: Quebrei minhas aplicações em microserviços, e agora?
+    link: http://biancarosa.com.br/slides/microservicos-pybr.html
+    description: Python Brasil, Natal, RN, 19/10/2018
+  
+  - icon: fa fa-github
+    title: Matando o medo do deploy
+    link: http://biancarosa.com.br/slides/microservicos.html
+    description: Pyladies BR Conf, Natal, RN, 16/10/2018
+  
+  - icon: fa fa-github
+    title: Quebrei minhas aplicações em microserviços, e agora?
+    link: http://biancarosa.com.br/slides/microservicos.html
+    description: PythOnRio, Rio de Janeiro, RJ, 29/08/2018
+
+  - icon: fa fa-github
     title: Desenvolvendo Web APIs em Go
     link: http://biancarosa.com.br/slides/tdc-go-web-apis.html
     description: TDC Florianópolis - Florianópolis / SC, 21/04/2018
