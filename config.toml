@@ -38,3 +38,9 @@ theme = "hugo-sustain-modified"
   identifier = "blog"
   weight = 200
   url = "/blog/"
+
+[[menu.main]]
+  name = "reading list"
+  identifier = "reading-list"
+  weight = 200
+  url = "/reading-list/"

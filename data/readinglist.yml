@@ -1,0 +1,25 @@
+name: Reading List
+source:
+  - icon: fa fa-chevron-circle-right
+    title: "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win"
+    link: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO
+
+  - icon: fa fa-chevron-circle-right
+    title: "Fluent Python: Clear, Concise, and Effective Programming"
+    link: https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008
+
+  - icon: fa fa-check-circle
+    title: "The Power of Habit: Why We Do What We Do in Life and Business"
+    link: https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X/ref=sr_1_1?keywords=habits&qid=1553477543&s=books&sr=1-1
+
+  - icon: fa fa-check-circle
+    title: "Scrum: The Art of Doing Twice the Work in Half the Time"
+    link: https://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X
+
+  - icon: fa fa-check-circle
+    title: "Clean Code: A Handbook of Agile Software Craftsmanship"
+    link: https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+
+  - icon: fa fa-check-circle
+    title: "Thoughtworks Antologia Brasil - Histórias de aprendizado e inovação"
+    link: https://www.casadocodigo.com.br/products/livro-thoughtworks-antologia
