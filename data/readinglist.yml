@@ -1,12 +1,24 @@
 name: Reading List
 source:
   - icon: fa fa-chevron-circle-right
-    title: "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win"
-    link: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO
+    title: "Rebels at Work: A Handbook for Leading Change from Within Paperback"
+    link: "https://www.amazon.com/Rebels-Work-Handbook-Leading-Change/dp/1491903953/ref=sr_1_1?keywords=rebels+at+work&qid=1559438775&s=books&sr=1-1"
+
+  - icon: fa fa-chevron-circle-right
+    title: "Kubernetes: Up and Running: Dive into the Future of Infrastructure"
+    link: "https://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/1491935677/ref=sr_1_1?crid=CQ0CPOOJ7D1M&keywords=kubernetes+up+and+running&qid=1559438845&s=books&sprefix=kubernetes+up+and+%2Cstripbooks%2C294&sr=1-1"
 
   - icon: fa fa-chevron-circle-right
     title: "Fluent Python: Clear, Concise, and Effective Programming"
     link: https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008
+
+  - icon: fa fa-chevron-check-right
+    title: "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"
+    link: https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897
+
+  - icon: fa fa-chevron-check-right
+    title: "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win"
+    link: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO
 
   - icon: fa fa-check-circle
     title: "The Power of Habit: Why We Do What We Do in Life and Business"
