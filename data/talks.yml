@@ -1,9 +1,19 @@
 name: Talks
 source:
   - icon: fa fa-github
+    title: Python na Cloud - Serverless, containers, o que escolher?
+    link: http://biancarosa.com.br/slides/python-na-cloud.html
+    description: Python Nordeste, Recife - PE 20/07/2019
+
+  - icon: fa fa-github
+    title: Boas Práticas & Clean Code com Go
+    link: http://biancarosa.com.br/slides/go-clean-code-2.html
+    description: GopheRio, Rio de Janeiro - RJ, 16/05/2019
+
+  - icon: fa fa-github
     title: Programando de forma concorrente em Go
     link: http://biancarosa.com.br/slides/concorrencia-go.html
-    description: GDG DevFest, Rio de Janeiro - RJ, 17/11/2017
+    description: GDG DevFest, Rio de Janeiro - RJ, 17/11/2018
 
   - icon: fa fa-github
     title: Quebrei minhas aplicações em microserviços, e agora?
