@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="Just another web developer website">
+    <link rel="shortcut icon" type="image/x-icon" href="http://biancarosa.com.br/img/favicon.ico">
+    <title>A Comprehensive Guide To Write Flask APIs - #1</title>
+    <meta name="generator" content="Hugo 0.26-DEV" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://biancarosa.com.br/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-44665454-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://biancarosa.com.br/"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/reading-list/">READING LIST</a></li>
+        
+        <li><a href="/talks/">TALKS</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="http://biancarosa.com.br/blog/writing_flask_apis_1_en/">A Comprehensive Guide To Write Flask APIs - #1</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          July 14, 2019
+            &nbsp;&nbsp;
+            
+            <span class="label label-success">python</span>
+            
+            <span class="label label-success">development</span>
+            
+            <span class="label label-success">en</span>
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              <p>So, you met Flask. You fell in love and you started to to everything with Flask. It soon hits you that your code is a mess and it&rsquo;s either the framework&rsquo;s fault or your fault. Maybe you haven&rsquo;t realized it and the news come from a coworker. Or as soon as someone starts working with your code, the poor person will freak out.</p>
+
+<p>You&rsquo;re not alone. Everyone writes shitty flask applications while learning. Unless you&rsquo;re some kind of rockstar developer or 10x engineer - in that case, my pardon for generalizing.</p>
+
+<p>Writing Flask applications means having <strong>freedom</strong>. Freedom is not necessarily a good thing if you&rsquo;re a follower of a framework&rsquo;s patterns and just wants to do things fast. But the best thing about freedom is that it <i>forces</i> you to think.</p>
+
+<p>Just thinking never took me to the next level, though. Searching for examples and watching how people do it are way more effective. Creating my own stuff based on the work of others speeds the learning curve in an amazing way.</p>
+
+<p>This is not a tutorial for you to <i>follow</i>. This is a series of posts showing how <strong>I</strong> it. You&rsquo;ll adapt to your style and I expect you to contribute with how you do it.</p>
+
+<p>First things first.</p>
+
+<p>Create a directory with your app name.</p>
+
+<p>So this is a good starting point for a Flask application:</p>
+
+<p>{{&lt; highlight python&gt;}
+&ldquo;&rdquo;&ldquo;app.main</p>
+
+<p>Module that starts the Flask application
+&ldquo;&rdquo;&rdquo;
+from flask import Flask, jsonify</p>
+
+<p>app = Flask(<strong>name</strong>)</p>
+
+<p>@app.route(&lsquo;/&rsquo;)
+def healthcheck():
+&ldquo;&rdquo;&ldquo;Returns health information&rdquo;&ldquo;&rdquo;
+return jsonify({
+&ldquo;message&rdquo;: &ldquo;I feel good.&rdquo;
+})
+{{&lt; / highlight &gt;}}</p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 13, 2018
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/python_smart_obj/">Writing distributed applications with Python Smart Objects as a Java RMI alternative</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        March 17, 2018
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/playing_with_django_rest/">Playing with Django Rest Framework</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 30, 2017
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/modules/">Why you should choose your Python module names more carefully</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://biancarosa.com.br/js/docs.min.js"></script>
+<script src="http://biancarosa.com.br/js/main.js"></script>
+
+<script src="http://biancarosa.com.br/js/ie10-viewport-bug-workaround.js"></script><!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+</html>
